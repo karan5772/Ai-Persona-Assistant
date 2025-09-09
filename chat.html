@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat - Chai With AI Buddies</title>
+    <link rel="stylesheet" href="chat.css" />
+  </head>
+  <body>
+    <div class="chat-container">
+      <header class="chat-header">
+        <button class="back-btn" onclick="window.location.href='index.html'">
+          ← Back
+        </button>
+        <div class="chat-persona">
+          <img src="" alt="Persona" class="persona-img" id="personaImg" />
+          <span class="persona-name" id="personaName">Persona Name</span>
+        </div>
+      </header>
+      <main class="chat-main">
+        <div class="chat-messages" id="chatMessages">
+          <div class="message left">
+            <div class="bubble">Hi! How can I help you today?</div>
+          </div>
+          <div class="message right">
+            <div class="bubble">Tell me about JavaScript.</div>
+          </div>
+        </div>
+        <form class="chat-input-area" id="chatForm" autocomplete="off">
+          <input
+            type="text"
+            id="chatInput"
+            placeholder="Type your message..."
+            required
+          />
+          <button type="submit">Send</button>
+        </form>
+      </main>
+    </div>
+    <script type="module" src="chat.js"></script>
+  </body>
+</html>
