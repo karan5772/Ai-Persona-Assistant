@@ -1,4 +1,4 @@
-// Clicking a buddy card immediately navigates to chat.html with persona info
+// persona info to html
 document.addEventListener("DOMContentLoaded", function () {
   const buddyCards = document.querySelectorAll(".buddy-card");
   const personas = [
@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
     card.style.cursor = "pointer";
     card.addEventListener("click", function () {
       const persona = personas[idx];
-      // Pass persona info via query params
       const url = `chat.html?name=${encodeURIComponent(
         persona.name
       )}&img=${encodeURIComponent(persona.img)}`;
