@@ -78,8 +78,6 @@ Create `backend/.env`:
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
-Then in `backend/hitesh_persona.js`, make sure you use:
-
 ### 3. Run the backend
 
 From `backend/`:
